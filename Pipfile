@@ -1,0 +1,41 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+aiohttp = "==3.6.2"
+appdirs = "==1.4.4"
+astroid = "==2.4.2"
+async-timeout = "==3.0.1"
+attrs = "==20.2.0"
+autopep8 = "==1.5.4"
+certifi = "==2019.9.11"
+chardet = "==3.0.4"
+distlib = "==0.3.1"
+filelock = "==3.0.12"
+idna = "==2.8"
+isort = "==5.5.2"
+lazy-object-proxy = "==1.4.3"
+lxml = "==4.4.1"
+mccabe = "==0.6.1"
+multidict = "==4.7.6"
+pipenv = "==2020.8.13"
+pycodestyle = "==2.6.0"
+pylint = "==2.6.0"
+requests = "==2.22.0"
+rope = "==0.17.0"
+six = "==1.15.0"
+slackclient = "==2.8.2"
+toml = "==0.10.1"
+urllib3 = "==1.25.7"
+virtualenv = "==20.0.31"
+virtualenv-clone = "==0.5.4"
+wrapt = "==1.12.1"
+yarl = "==1.5.1"
+python-dotenv = "*"
+
+[requires]
+python_version = "3.8"
