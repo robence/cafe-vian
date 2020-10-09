@@ -43,7 +43,7 @@ def get_cafe_vian_menu(weekday):
     place_selector = '/div/div/section/div/ul/li[3]'
 
     day_selector = div_selector + place_selector + \
-        "/ul/li[" + str(weekday) + "]"
+        "/ul/li[" + str(weekday+1) + "]"
     main_course_selector = day_selector + '/div/div[2]'
     appetizer_selector = day_selector + '/ul/li/div/div/span'
 
@@ -61,7 +61,7 @@ def get_cafe_vian_menu(weekday):
     menu = '%s | %s\n\n%s\n%s\n' % (
         title, place, formatted_main_course, appetizer)
 
-    print(day)
+    # print(day)
     return menu
 
 
@@ -71,14 +71,14 @@ def get_weekday():
 
 
 def main():
-    # weekday = get_weekday()
-    # menu = get_cafe_vian_menu(weekday)
-    # print(menu)
+    weekday = get_weekday()
+    menu = get_cafe_vian_menu(weekday)
+    print(menu)
 
-    print(SLACK_API_TOKEN)
-    x = SLACK_API_TOKEN.split(',')
-    print("x")
-    print(x)
+    # print(SLACK_API_TOKEN)
+    # x = SLACK_API_TOKEN.split(',')
+    # print("x")
+    # print(x)
 
 
 if __name__ == "__main__":
